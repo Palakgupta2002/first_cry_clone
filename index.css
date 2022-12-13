@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 #searchbar{
     width: 350px;
     height: 35px;
@@ -6,11 +10,14 @@
     margin-top:5px ;
     margin-left: 8px;
     border-radius: 6px;
-  
    border-color: red;
     border: 0.3px solid rgb(233, 223, 223);
  
 }
+input:focus{
+    outline: none;
+}
+
 #firstcryimage{
     margin-left: 45px;
     margin-top: 5px;
@@ -56,16 +63,54 @@ nav{
 }
 .afternav{
     width: 100%;
-    height: 45px;
+    height: 55px;
     background-color: #FFD91C;
-    margin-top: -1px;
+    margin-top: -2px;
     display: flex;
      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
      
 }
-.afternav p{
-    padding-left: 20px;
+.afternav .all1{
+    padding-left: 14px;
+    padding-right: 8px;
+    padding-top: 5px;
+    color: rgb(110, 90, 90);
+
     font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+   
+    /* border: 2px solid red; */
+}
+.afternav :hover{
+    background-color: aliceblue;
+    
+   
+  
+  
+}
+#clubimage{
+    margin-top: 14px;
+    margin-left: 11px;
+    /* border: 2px solid red; */
+}
+.Carter{
+    background-color:#019FDE;
+    margin-left: 10px;
+    color: white;
+   
+    padding-top: 12px;
+
+}
+.all{
+    padding-left: 60px;
+    color: rgb(110, 90, 90);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 5px;
 }
 
     
