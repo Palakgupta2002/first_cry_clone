@@ -125,42 +125,29 @@ nav{
     color: rgb(99, 96, 96);
     
 }
-#slider{
-   height: 500px;
-  width: 900px;
-  margin-left: 230px;
-    background-image:url("https://cdn.fcglcdn.com/brainbees/banners/desktop_ffffff1670917804463.webp") ;
-    animation:  slidbar 20s infinite linear;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-   
- 
+#navfooterp1{
+    font-size: 23px;
+    font-weight: 510;
+    color: rgb(32, 32, 32);
+    margin-left: 50px;
+    margin-top: 33px;
+    border-bottom: 0.1px solid rgb(231, 224, 224);
+    
+    
 }
-@keyframes slidbar{
-    0%{ background-image:url("https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_buy3_moas_desktop1670571109249.webp") ;
-       
-
-    }
-    18%{
-        background-image:url("https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_free-at-three_oops_desktop1670910788682.webp") ;
-        
-
-    }
-    37%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/desktop_ffffff1670917804463.webp");
-    }
-    57%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/hp_dp_bbh_mcf_up60_nov_994x3991667625844507.webp");
-    }
-    71%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/hp_dp_pmp_f35_nov_994x3991668149715638.webp");
-    }
-    86%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/merchf_roi_desktop_hp_mom_look_good_budget_default_1312221670947465250.webp");
-    } 
-
- }
-
+#amitabhimage{
+    margin-top: -55px;
+    margin-left: 50px;
+}
+#afternavfooterp{
+    margin-left: 620px;
+    font-size: 28.6px;
+    margin-top: 13px;
+    color:rgb(99, 96, 96) ;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
 
 
     
