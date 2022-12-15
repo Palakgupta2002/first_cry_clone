@@ -133,6 +133,7 @@ nav{
     animation:  slidbar 20s infinite linear;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    z-index: 40;
    
  
 }
@@ -148,22 +149,153 @@ nav{
     }
     37%{
         background-image: url("https://cdn.fcglcdn.com/brainbees/banners/desktop_ffffff1670917804463.webp");
+      
     }
     57%{
         background-image: url("https://cdn.fcglcdn.com/brainbees/banners/hp_dp_bbh_mcf_up60_nov_994x3991667625844507.webp");
     }
     71%{
         background-image: url("https://cdn.fcglcdn.com/brainbees/banners/hp_dp_pmp_f35_nov_994x3991668149715638.webp");
+        
     }
     86%{
         background-image: url("https://cdn.fcglcdn.com/brainbees/banners/merchf_roi_desktop_hp_mom_look_good_budget_default_1312221670947465250.webp");
+        
     } 
 
+
  }
-
-
+ .sliderbackground{
+    animation:  slidback 20s infinite linear;
 
     
+ }
+@keyframes slidback{
+    0%{
+        background-color: whitesmoke;
+    }
+    18%{
+        background-color: #b3ddee;
+    }
+    37%{
+        background-color: rgb(56, 56, 167);
+    }
+    57%{
+        background-color: #d8c45f;
+    }
+    71%{
+        background-color:skyblue;
+    }
+    86%{
+        background-color:rgb(56, 56, 167);
+    }
+   
+}
+
+.productslider{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   justify-content: center;
+   margin-left:80px ;
+   margin-right: 50px;
+   row-gap: 32px; 
+   column-gap: -1px;
+   margin-top: 20px;
+}
+#products{
+    height: 459px;
+    gap: 20px;
+    width: 380px;
+}
+
+
+#products:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: 1px solid white;
+    /* border-radius: 12px; */
+    height: 459px;
+    width: 379px;
+}
+#productpage{
+    background-color: #a4cedf;
+    margin-top: 12px;
+}
+#productp{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: rgb(83, 79, 79);
+}
+#productdiscription{
+    background-color:rgb(243, 241, 241);
+    
+    margin-top: -20px;
+    height: 80px;
+}
+#productdiscription:hover{
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#paragraphp{
+    color:rgb(151, 148, 148);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+   
+    position: relative;
+   
+}
+#paragraph{
+  padding-top: 10px;
+    color:rgb(59, 58, 58);
+    padding-left: 15px;
+}
+.viewpoint{
+    display: flex;
+    padding-top: 60px;
+    margin-left: 80px;
+    gap:40px;
+    margin-bottom: 20px;
+}
+.viewpointinner{
+    width: 578px;
+    height: 45px;
+    background-color: #f0f3f5;
+   text-align: center;
+    padding-top: 23px;
+    border: 2px solid rgb(253, 244, 244);
+    
+}
+.viewpointinner:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: 0.5s ease-in;
+    height:47px ;
+    width: 580px;
+
+}
+.productpagebackground{
+    height: 2650px;
+    background-color: rgb(228, 232, 235);
+    
+}
+.mainview{
+    background-color: #d8c45f;
+    height:200px;
+    margin-top: -60px;
+    
+
+}
+#weddingaddition{
+    margin-top: -4px;
+    margin-left: 70px;
+}
+#weddingaddition1{
+   margin-top: 2px;
+    margin-left: 70px;
+}
+
+
+
+
     
 
 
