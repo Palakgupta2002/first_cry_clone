@@ -129,7 +129,7 @@ nav{
    height: 500px;
   width: 900px;
   margin-left: 230px;
-    background-image:url("https://cdn.fcglcdn.com/brainbees/banners/desktop_ffffff1670917804463.webp") ;
+    background-image:url("./firstcryfolder/slid1.jpg") ;
     animation:  slidbar 20s infinite linear;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -138,29 +138,28 @@ nav{
  
 }
 @keyframes slidbar{
-    0%{ background-image:url("https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_buy3_moas_desktop1670571109249.webp") ;
+    0%{ background-image:url("./firstcryfolder/slid1.jpg") ;
        
 
     }
     18%{
-        background-image:url("https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_free-at-three_oops_desktop1670910788682.webp") ;
+        background-image:url("./firstcryfolder/slid2.jpg") ;
         
 
     }
     37%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/desktop_ffffff1670917804463.webp");
+        background-image: url("./firstcryfolder/slid3.jpg");
       
     }
     57%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/hp_dp_bbh_mcf_up60_nov_994x3991667625844507.webp");
+        background-image: url("./firstcryfolder/slid4.jpg");
     }
     71%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/hp_dp_pmp_f35_nov_994x3991668149715638.webp");
+        background-image: url("./firstcryfolder/slid5.jpg");
         
     }
     86%{
-        background-image: url("https://cdn.fcglcdn.com/brainbees/banners/merchf_roi_desktop_hp_mom_look_good_budget_default_1312221670947465250.webp");
-        
+        background-image: url("./firstcryfolder/slid6.jpg");
     } 
 
 
