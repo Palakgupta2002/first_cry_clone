@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  
+    
+
     <title>FirstcryREGISTER</title>
 </head>
 <body>
@@ -22,11 +23,11 @@
     </div>
     <div>
         <p id="p">Full Name</p>
-        <input id="input"  placeholder="Enter your Full name" type="text" required="true">
+        <input id="name" class="input"  placeholder="Enter your Full name" type="text" required="true">
     </div>
     <div>
         <p id="p">Mobile Number</p>
-         <input id="input" placeholder=" +91 Enter your Mobile Number" type="mobile number" required="true">
+         <input id="mobile" class="input" placeholder=" +91 Enter your Mobile Number" type="mobile number" required="true">
          <p id="p1">OTP will be sent on this Mobile No. for verification.
 
          </p>
@@ -34,20 +35,17 @@
     <div >
 
         <p id="p">Email ID</p>
-        <input id="input" placeholder=" Enter your Email ID" type="email" required="true">
+        <input id="email" class="input" placeholder=" Enter your Email ID" type="email" required="true">
     </div>
     <div>
         <p id="p">Password</p>
-        <input id="input" placeholder="Enter your Password" type="password" required="true">
+        <input id="password" class="input" placeholder="Enter your Password" type="password" required="true">
     </div>
     <p style="font-size:14px;color:rgb(61, 60, 60); position: relative; top:-7px;">Password must be at least 8 characters long with 1<br> Uppercase, 1 Lowercase & 1 Numeric character.</p>
    
-    <button  id="button">CONTINUE</button>
+    <button id="button" onclick="signup()" >CONTINUE</button>
 </div>
 
-    
-
-
-    
 </body>
+<script src="./signup.js"></script>
 </html>
