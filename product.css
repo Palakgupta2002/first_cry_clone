@@ -112,42 +112,13 @@ nav{
     font-weight: 600;
     padding-top: 5px;
 }
-.navfooter{
-    height: 140px;
-    background-color: #f1ebebec;
-    font-family: Arial, Helvetica, sans-serif;
-   
-    
+#home{
+    border:2px solid red;
 }
-#navfooterp{
-    margin-left: 35px;
-    font-size: 13px;
-    color: rgb(99, 96, 96);
-    
+#maindiv{
+    display:flex;
 }
-#navfooterp1{
-    font-size: 23px;
-    font-weight: 510;
-    color: rgb(32, 32, 32);
-    margin-left: 50px;
-    margin-top: 33px;
-    border-bottom: 0.1px solid rgb(231, 224, 224);
     
-    
-}
-#amitabhimage{
-    margin-top: -55px;
-    margin-left: 50px;
-}
-#afternavfooterp{
-    margin-left: 620px;
-    font-size: 28.6px;
-    margin-top: 13px;
-    color:rgb(99, 96, 96) ;
-    font-family: Arial, Helvetica, sans-serif;
-    
-   
-}
 
 
     

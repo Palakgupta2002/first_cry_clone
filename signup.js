@@ -20,6 +20,7 @@ function signup(){
         
         arr.push(userdata);
         alert("sign UP Succesfully");
+        location.href="index.html";
         location.reload();
 
        
