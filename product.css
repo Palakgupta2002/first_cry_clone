@@ -112,42 +112,111 @@ nav{
     font-weight: 600;
     padding-top: 5px;
 }
-.navfooter{
-    height: 140px;
-    background-color: #f1ebebec;
-    font-family: Arial, Helvetica, sans-serif;
-   
-    
+#home{
+    border:2px solid red;
 }
-#navfooterp{
-    margin-left: 35px;
-    font-size: 13px;
-    color: rgb(99, 96, 96);
-    
+#maindiv{
+    display:flex;
 }
-#navfooterp1{
-    font-size: 23px;
-    font-weight: 510;
-    color: rgb(32, 32, 32);
-    margin-left: 50px;
-    margin-top: 33px;
-    border-bottom: 0.1px solid rgb(231, 224, 224);
-    
-    
+#magnifying{
+    margin-top: 10px;
+    position: relative;
+    right: 200px;
+    z-index: 1;
+    color: black;
 }
-#amitabhimage{
-    margin-top: -55px;
-    margin-left: 50px;
+#searchbar{
+    width: 130px;
+    height: 25px;
+    padding-right: 50px;
+   position: relative;
+    margin-top:2px ;
+    margin-left: 0px;
+    border-radius: 6px;
+   border-color: red;
+    border: 0.3px solid rgb(233, 223, 223);
+ 
 }
-#afternavfooterp{
-    margin-left: 620px;
-    font-size: 28.6px;
-    margin-top: 13px;
-    color:rgb(99, 96, 96) ;
-    font-family: Arial, Helvetica, sans-serif;
+#input{
+   margin-top: 9px;
+}
+#searchbar1{
+    width: 350px;
+    height: 35px;
+    padding-left: 20px;
+   position: relative;
+    margin-top:5px ;
+    margin-left: 8px;
+    border-radius: 6px;
+   border-color: red;
+    border: 0.3px solid rgb(233, 223, 223);
+ 
+}
+#magnifying1{
+    margin-top: 15px;
+    position: relative;
+    right: 30px;
+    z-index: 1;
+    color: orange;
+}
+
+form{
+    border-bottom:0.1px solid rgb(240, 232, 232);
+    width:200px;
+    padding-bottom: 20px;
+}
+
+#productBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 2px solid blue;
+}
+
+#filter1{
+    border:2px solid green;
+    margin-top: 100px;
+}
+#mainfilterbox{
+    display:flex;
+    margin-top: 150px;
+}
+#pincodebox{
+    display:flex; 
+    font-size: 13.5px;
+}
+#pincode{
+    color:blue; 
+    margin-left: 4px;
+}
+#filterbtn{
+    width:200px; 
+    height:40px;
+    border:1px solid rgb(223, 218, 218);
+     border-radius: 1px;
+      padding-right: 110px;
+}
+#clear{
+    text-decoration:underline; 
+    margin-left: 120px;
+}
+#productbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#filterbox{
+    margin-left: 60px;
+}
+#maindivcss{
+    margin-left:50px;
+    padding-top :90px;
+
+}
+
+
+
+
+
     
-   
-}
 
 
     
