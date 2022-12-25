@@ -466,18 +466,27 @@ function mycart(){
         div1.append(Rate,del,discount);
         maindiv.append(image,div1,month,gender);
         document.getElementById("productbox").append(maindiv);
-
-
     });
 
 
 }
 mycart();
 
-function filter(){
+let product = []
+function threetosix(){
     arr.filter((el,index)=>{
-        if(el.month=="6-9 Month"){
-            
+        if(el.month=="3-6 Month"){
+            product.push(el)
         }
     })
 }
+
+function sixtonine(){
+    arr.filter((elem,index)=>{
+        if(elem.month=="6-9 Month"){
+            product.push(elem);
+        }
+    })
+
+}
+console.log(product);
