@@ -202,16 +202,27 @@ form{
 #productbox{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin-left: 250px;
+    margin-bottom: 200px;
 }
 #filterbox{
-    margin-left: 60px;
+    margin-left: 30px;
+   height:300px;
+    position: fixed;
+   
+    overflow: scroll;
 }
 #maindivcss{
     margin-left:50px;
     padding-top :90px;
+   
 
 }
+#sortfilter > select{
+    border:none;
+    outline: none;
 
+}
 
 
 

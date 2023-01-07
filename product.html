@@ -72,7 +72,7 @@
           </div>
         <div id="mainfilterbox">
         
-          <div id="filterbox">
+          <div id="filterbox" >
             <image src="./firstcryfolder/ab_karo_choose.png">
               <div id="pincodebox" >
               <p >DELIVER TO PINCODE</p>
@@ -103,12 +103,12 @@
               <input  id="searchbar" placeholder="Search by age" type="text" > 
               <i id="magnifying" class="fa-solid fa-magnifying-glass"></i></div>
             
-          <input id="input" type="checkbox" name="choose" >Preemie<br>
-          <input id="input" type="checkbox" name="choose" >0-3 Month<br>
-          <input onclick="threetosix()" id="input" type="checkbox" name="choose" >3-6 Month<br>
-          <input onclick="sixtonine()"  id="input" type="checkbox" name="choose" >6-9 Month<br>
-          <input id="input" type="checkbox" name="choose" >9-12 Month <br>
-          <input id="input" type="checkbox" name="choose" >more then 1 year <br>
+          <input id="checkbox1" type="checkbox" name="choose" >Preemie<br>
+          <input id="checkbox2" type="checkbox" name="choose" >0-3 Month<br>
+          <input id="checkbox3" type="checkbox" name="choose" >3-6 Month<br>
+          <input id="checkbox4" type="checkbox" name="choose" >6-9 Month<br>
+          <input id="checkbox5" type="checkbox" name="choose" >9-12 Month <br>
+          <input id="checkbox6" type="checkbox" name="choose" >more then 1 year <br>
         </div>
         <div>
           <div style="display:flex">
@@ -131,14 +131,22 @@
       <input id="input" type="checkbox" name="choose" >30% to 40%<br>
       <input id="input" type="checkbox" name="choose" > More than 40%<br>
     </div>
+   <div id="sortfilter">
+    <p>Sort by Price</p>
+    <select name="" id="select">
+      <option value="">Select By Price</option>
+      <option id="asc" value="asc">low to high</option>
+      <option id="dsc" value="dsc">high to low</option>
+     </select>
+   </div>
           
         </div>
         
         
-
           
           <div id="productbox">
-
+           
+            
           </div>
         </div>
           
