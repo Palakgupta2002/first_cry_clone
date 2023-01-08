@@ -598,143 +598,121 @@ document.getElementById("age").addEventListener("click",(ele=>{
 }))
 
 //that's for a price
-let filter1=document.getElementById("checkbox11").checked;
-let filter2=document.getElementById("checkbox12").checked;
-let filter3=document.getElementById("checkbox13").checked;
-let filter4=document.getElementById("checkbox14").checked;
-let filter5=document.getElementById("checkbox15").checked;
-document.getElementById("price").addEventListener("change",((ele)=>{
-let filter1=document.getElementById("checkbox11").checked;
-let filter2=document.getElementById("checkbox12").checked;
-let filter3=document.getElementById("checkbox13").checked;
-let filter4=document.getElementById("checkbox14").checked;
-let filter5=document.getElementById("checkbox15").checked;
+
+document.getElementById("checkbox11").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox11").checked;
     if(filter1){
-        let productArr1=arr.filter((ele)=>{
-            if(ele.Rate > 250 && ele.Rate < 500){
-                return ele;
-            }
+       let productArr1=arr.filter((ele)=>{
+           if(ele.Rate > 250 && ele.Rate < 500){
+               return ele;
+           }
 
-        })
+       })
 
-        display(productArr1);
+       display(productArr1);
 
-    }
-    if(!filter1){
-        display(arr)
-    }
+   }
+   if(!filter1){
+       display(arr)
+   }
 
-    // filter2
-    if(filter2){
-        let productArr=arr.filter((ele)=>{
-            if(ele.Rate > 500 && ele.Rate < 1000){
-                return ele;
-            }
+})
+document.getElementById("checkbox12").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox12").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.Rate > 500 && ele.Rate < 1000){
+               return ele;
+           }
 
-        })
+       })
 
-        display(productArr);
+       display(productArr1);
 
-    }
-    if(!filter2){
-        display(arr)
-    }
+   }
+   if(!filter1){
+       display(arr)
+   }
 
-  
-// // Filter 3
-// if(filter3){
-//     let productArr=arr.filter((ele)=>{
-//         if(ele.Rate > 1000 && ele.Rate < 2000){
-//             return ele;
-//         }
+})
+document.getElementById("checkbox13").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox13").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.Rate > 1000 && ele.Rate < 2000){
+               return ele;
+           }
 
-//     })
+       })
 
-//     display(productArr);
+       display(productArr1);
 
-// }
-// if(!filter3){
-//     display(arr)
-// }
- 
-// // Filter 4
-// if(filter4){
-//     let productArr=arr.filter((ele)=>{
-//         if(ele.Rate > 2000 && ele.Rate < 4000){
-//             return ele;
-//         }
+   }
+   if(!filter1){
+       display(arr)
+   }
 
-//     })
+})
 
-//     display(productArr);
+document.getElementById("checkbox14").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox14").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.Rate > 2000 && ele.Rate < 4000){
+               return ele;
+           }
 
-// }
-// if(!filter4){
-//     display(arr)
-// }
+       })
 
+       display(productArr1);
 
-    // if(filter1==true && filter2==true){
-    //     let productArr=arr.filter((ele)=>{
-    //         if(ele.Rate > 250 && ele.Rate < 1000){
-    //             return ele;
-    //         }
-           
-    //     })
-    //     display(productArr);
-    // }
-    // if(filter1==false && filter2==false){
-    //     display(arr)
-    // }
+   }
+   if(!filter1){
+       display(arr)
+   }
 
-    // if(filter2==true && filter3==true){
-    //     let productArr=arr.filter((ele)=>{
-    //         if(ele.Rate > 500 && ele.Rate < 2000){
-    //             return ele;
-    //         }
-           
-    //     })
-    //     display(productArr);
-    // }
-    // if(filter2==false && filter3==false){
-    //     display(arr)
-    // }
+})
+document.getElementById("checkbox15").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox15").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.Rate > 4000 && ele.Rate < 6000){
+               return ele;
+           }
 
-    // if(filter3==true && filter4==true){
-    //     let productArr=arr.filter((ele)=>{
-    //         if(ele.Rate > 1000 && ele.Rate < 4000){
-    //             return ele;
-    //         }
-           
-    //     })
-    //     display(productArr);
-    // }
-    // if(filter3==false && filter4==false){
-    //     display(arr)
-    // }
-    // if(filter4==true && filter5==true){
-    //     let productArr=arr.filter((ele)=>{
-    //         if(ele.Rate > 2000 && ele.Rate < 6000){
-    //             return ele;
-    //         }
-           
-    //     })
-    //     display(productArr);
-    // }
-    // if(filter4==false && filter5==false){
-    //     display(arr)
-    // }
+       })
 
+       display(productArr1);
 
+   }
+   if(!filter1){
+       display(arr)
+   }
 
-}))
+})
+document.getElementById("checkbox15").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox15").checked;
+    let filter2=document.getElementById("checkbox14").checked;
+    if(filter1==true && filter2==true){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.Rate > 2000 && ele.Rate < 6000){
+               return ele;
+           }
 
+       })
 
+       display(productArr1);
 
+   }
+   if(filter1==false && filter2==false){
+       display(arr)
+   }
+   if(filter2==false && filter1==false){
+    display(arr)
+}
 
+})
 
-
-   
       
     // Price low to high and high to low sort
 
