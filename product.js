@@ -354,7 +354,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 859,
     delete:1299,
-    discount:"30%",
+    discount:"10%",
     month: "0-3 Month",
     gender:"Girl", 
 
@@ -409,7 +409,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1245,
     delete:1345,
-    discount:"20%",
+    discount:"10%",
     month: "6-9 Month",
     gender:"Girl", 
 
@@ -452,29 +452,17 @@ gender:"Girl",
     
     },
     {
-
-        image:"file:///C:/Users/User/Downloads/bath2.webp",
+        image:"https://i.postimg.cc/7hcfZNrQ/night3.webp",
         des:"babyhug Full Sleeve acyrlic full Sleeve",
-        Rate: 3059,
-        delete:1999,
-        discount:"20%",
+        Rate: 4059,
+        delete:5999,
+        discount:"40%",
         month: "0-3 Month",
         gender:"Girl", 
+    
+    
+    },
         
-        
-        },
-        {
-
-            image:"file:///C:/Users/User/Downloads/bath1.webp",
-            des:"babyhug Full Sleeve acyrlic full Sleeve",
-            Rate: 4059,
-            delete:1999,
-            discount:"30%",
-            month: "0-3 Month",
-            gender:"Girl", 
-            
-            
-            },
 ];
 
 
@@ -495,6 +483,9 @@ document.getElementById("age").addEventListener("click",(ele=>{
             }
         });
         display(productarr);
+    }
+    if(!filter2){
+        display(arr);
     }
     if(filter2){
         let productArr = arr.filter((ele)=>{
@@ -712,7 +703,49 @@ document.getElementById("checkbox15").addEventListener("click",()=>{
 }
 
 })
-
+//it's for a discount
+document.getElementById("checkbox21").addEventListener("click",((ele)=>{
+     let filter1=document.getElementById("checkbox21").checked;
+     if(filter1){
+        let productArr=arr.filter((ele)=>{
+            if(ele.discount=="10%" || ele.discount=="20%"){
+                return ele;
+            }
+        })
+        display(productArr);
+     }
+     if(!filter1){
+        display(arr);
+     }
+}))
+document.getElementById("checkbox22").addEventListener("click",((ele)=>{
+    let filter1=document.getElementById("checkbox22").checked;
+    if(filter1){
+       let productArr=arr.filter((ele)=>{
+           if(ele.discount=="20%" || ele.discount=="30%"){
+               return ele;
+           }
+       })
+       display(productArr);
+    }
+    if(!filter1){
+       display(arr);
+    }
+}))
+document.getElementById("checkbox23").addEventListener("click",((ele)=>{
+    let filter1=document.getElementById("checkbox23").checked;
+    if(filter1){
+       let productArr=arr.filter((ele)=>{
+           if( ele.discount=="40%"){
+               return ele;
+           }
+       })
+       display(productArr);
+    }
+    if(!filter1){
+       display(arr);
+    }
+}))
       
     // Price low to high and high to low sort
 
@@ -740,17 +773,18 @@ display(productArr);
 
 
     
-  
+  let cartArr = []
 
 function display(temp){
     document.getElementById("productbox").innerHTML = "";
     temp.map((ele)=>{
         var maindiv= document.createElement("div");
+        var button =document.createElement("button");
         maindiv.setAttribute("id","maindivcss");
         var image=document.createElement("img");
         image.src=ele.image;
         var dec=document.createElement("h4");
-        dec.innerText=ele.dec;
+        dec.innerText=ele.des;
         var div1= document.createElement("div");
         div1.style.display="flex";
         div1.style.gap="20px";
@@ -767,7 +801,20 @@ function display(temp){
         var gender=document.createElement("p");
         gender.innerText=ele.gender; 
         div1.append(Rate,del,discount);
-        maindiv.append(image,div1,month,gender);
+        div1.style.position="relative";
+        div1.style.top="-20px";
+        var div2=document.createElement("div");
+        button.setAttribute("id","button1");
+        button.addEventListener("click",(()=>{
+          cartArr.push(ele);
+          alert("Product added")
+          localStorage.setItem("cartData",JSON.stringify(cartArr))
+        }))
+        div2.style.position="relative";
+        div2.style.top="-40px";
+        button.innerText="Add to Cart";
+        div2.append(gender,button);
+        maindiv.append(image,dec,div1,div2);
         maindiv.setAttribute("id", "mainproduct");
         document.getElementById("productbox").append(maindiv);
     });
