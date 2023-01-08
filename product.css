@@ -178,7 +178,7 @@ form{
 }
 #mainfilterbox{
     display:flex;
-    margin-top: 150px;
+    margin-top: -20px;
 }
 #pincodebox{
     display:flex; 
@@ -202,14 +202,16 @@ form{
 #productbox{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-left: 250px;
+    left: 300px;
     margin-bottom: 200px;
+    top:60px;
+    position: relative;
 }
 #filterbox{
     margin-left: 30px;
    height:300px;
     position: fixed;
-   
+   margin-top: 30px;
     overflow: scroll;
 }
 #maindivcss{
@@ -222,6 +224,19 @@ form{
     border:none;
     outline: none;
 
+}
+#mainproduct{
+    height:498px;
+    padding: 10px;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#mainproduct:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     transition: 0.2s;
+     height: 500px;
 }
 
 

@@ -12,7 +12,7 @@ let arr=[{
     des:"Pin kind full Sleeve cab",
     Rate: 965,
     delete:1399,
-    discount:"20%",
+    discount:"40%",
     month:"more then 1 year" ,
     gender:"Boy", 
 
@@ -22,7 +22,7 @@ let arr=[{
     des:"Sweater with  acyrlic full Sleeve",
     Rate: 1074,
     delete:3000,
-    discount:"15%",
+    discount:"40%",
     month: "9-12 Month",
     gender:"Girl", 
 
@@ -32,7 +32,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 2000,
     delete:2500,
-    discount:"10%",
+    discount:"30%",
     month: "0-3 Month",
     gender:"Boy", 
 
@@ -42,7 +42,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1059,
     delete:1999,
-    discount:"10%",
+    discount:"20%",
     month: "9-12 Month",
     gender:"Boy", 
 
@@ -63,7 +63,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 359,
     delete:699,
-    discount:"30%",
+    discount:"40%",
     month: "more then 1 year",
     gender:"Boy", 
 
@@ -221,7 +221,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1999,
-    discount:"10%",
+    discount:"20%",
     month: "more then 1 year",
     gender:"Girl", 
 
@@ -282,7 +282,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1209,
     delete:1999,
-    discount:"20%",
+    discount:"30%",
     month: "9-12 Month",
     gender:"Girl", 
 
@@ -292,7 +292,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1659,
     delete:1999,
-    discount:"10%",
+    discount:"20%",
     month: "6-9 Month",
     gender:"Girl", 
 
@@ -302,7 +302,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1359,
     delete:1999,
-    discount:"20%",
+    discount:"30%",
     month: "more then 1 year",
     gender:"Girl", 
 
@@ -312,7 +312,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1699,
-    discount:"10%",
+    discount:"40%",
     month: "3-6 Month",
     gender:"Girl", 
 
@@ -332,7 +332,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1999,
-    discount:"10%",
+    discount:"30%",
     month: "more then 1 year",
     gender:"Girl", 
 
@@ -343,7 +343,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1159,
     delete:1999,
-    discount:"10%",
+    discount:"30%",
     month: "more then 1 year",
     gender:"Girl", 
 
@@ -376,7 +376,7 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1059,
     delete:1999,
-    discount:"10%",
+    discount:"40%",
     month: "0-3 Month",
     gender:"Girl", 
 
@@ -433,56 +433,308 @@ image:"https://i.postimg.cc/3JKRvTQ7/top1.webp",
 des:"babyhug Full Sleeve acyrlic full Sleeve",
 Rate: 1259,
 delete:1999,
-discount:"10%",
+discount:"40%",
 month: "0-3 Month",
 gender:"Girl", 
 
 
 },
+{
+
+    image:"https://i.postimg.cc/3JKRvTQ7/top1.webp",
+    des:"babyhug Full Sleeve acyrlic full Sleeve",
+    Rate: 350,
+    delete:1999,
+    discount:"40%",
+    month: "0-3 Month",
+    gender:"Girl", 
+    
+    
+    },
+    {
+
+        image:"file:///C:/Users/User/Downloads/bath2.webp",
+        des:"babyhug Full Sleeve acyrlic full Sleeve",
+        Rate: 3059,
+        delete:1999,
+        discount:"20%",
+        month: "0-3 Month",
+        gender:"Girl", 
+        
+        
+        },
+        {
+
+            image:"file:///C:/Users/User/Downloads/bath1.webp",
+            des:"babyhug Full Sleeve acyrlic full Sleeve",
+            Rate: 4059,
+            delete:1999,
+            discount:"30%",
+            month: "0-3 Month",
+            gender:"Girl", 
+            
+            
+            },
 ];
 
 
 display(arr);
 
+// that's for filtering sort by array
+document.getElementById("age").addEventListener("click",(ele=>{
+   
+    let filter2=document.getElementById("checkbox2").checked;
+    let filter3=document.getElementById("checkbox3").checked;
+    let filter4=document.getElementById("checkbox4").checked;
+    let filter5=document.getElementById("checkbox5").checked;
+    let filter6=document.getElementById("checkbox6").checked;
+    if(filter6==true && filter2==true && filter3==true && filter4==true && filter5==true && filter5==true){
+       let productarr= arr.filter((ele)=>{
+            if(ele.month=="0-3 Month" || ele.month=="3-6 Month" || ele.month=="6-9 Month"|| ele.month=="9-12 Month" || ele.month=="more then 1 year"){
+               return ele;
+            }
+        });
+        display(productarr);
+    }
+    if(filter2){
+        let productArr = arr.filter((ele)=>{
+            if(ele.month=="0-3 Month"){
+              return ele;
+            }
+        });
+        display(productArr) 
+    }
+    if(filter3){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="3-6 Month"){
+                return ele;
+            }
+
+        })
+        display(productArr);
+    }
+    if(filter4){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="6-9 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter5){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="9-12 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter6){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="more then 1 year"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter6==true && filter5==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="more then 1 year" || ele.month=="9-12 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter6==true && filter4==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="more then 1 year" || ele.month=="6-9 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter6==true && filter3==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="more then 1 year" || ele.month=="3-6 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter6==true && filter2==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="more then 1 year" || ele.month=="0-3 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter2==true && filter3==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="3-6 Month" || ele.month=="0-3 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter3==true && filter4==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="3-6 Month" || ele.month=="6-9 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+    if(filter4==true && filter5==true){
+        let productArr=arr.filter((ele)=>{
+            if(ele.month=="9-12 Month" || ele.month=="6-9 Month"){
+                return ele;
+            }
+        })
+        display(productArr);
+    }
+
+
+}))
+
+//that's for a price
+let filter1=document.getElementById("checkbox11").checked;
+let filter2=document.getElementById("checkbox12").checked;
+let filter3=document.getElementById("checkbox13").checked;
+let filter4=document.getElementById("checkbox14").checked;
+let filter5=document.getElementById("checkbox15").checked;
+document.getElementById("price").addEventListener("change",((ele)=>{
+let filter1=document.getElementById("checkbox11").checked;
+let filter2=document.getElementById("checkbox12").checked;
+let filter3=document.getElementById("checkbox13").checked;
+let filter4=document.getElementById("checkbox14").checked;
+let filter5=document.getElementById("checkbox15").checked;
+    if(filter1){
+        let productArr1=arr.filter((ele)=>{
+            if(ele.Rate > 250 && ele.Rate < 500){
+                return ele;
+            }
+
+        })
+
+        display(productArr1);
+
+    }
+    if(!filter1){
+        display(arr)
+    }
+
+    // filter2
+    if(filter2){
+        let productArr=arr.filter((ele)=>{
+            if(ele.Rate > 500 && ele.Rate < 1000){
+                return ele;
+            }
+
+        })
+
+        display(productArr);
+
+    }
+    if(!filter2){
+        display(arr)
+    }
+
+  
+// // Filter 3
+// if(filter3){
+//     let productArr=arr.filter((ele)=>{
+//         if(ele.Rate > 1000 && ele.Rate < 2000){
+//             return ele;
+//         }
+
+//     })
+
+//     display(productArr);
+
+// }
+// if(!filter3){
+//     display(arr)
+// }
+ 
+// // Filter 4
+// if(filter4){
+//     let productArr=arr.filter((ele)=>{
+//         if(ele.Rate > 2000 && ele.Rate < 4000){
+//             return ele;
+//         }
+
+//     })
+
+//     display(productArr);
+
+// }
+// if(!filter4){
+//     display(arr)
+// }
+
+
+    // if(filter1==true && filter2==true){
+    //     let productArr=arr.filter((ele)=>{
+    //         if(ele.Rate > 250 && ele.Rate < 1000){
+    //             return ele;
+    //         }
+           
+    //     })
+    //     display(productArr);
+    // }
+    // if(filter1==false && filter2==false){
+    //     display(arr)
+    // }
+
+    // if(filter2==true && filter3==true){
+    //     let productArr=arr.filter((ele)=>{
+    //         if(ele.Rate > 500 && ele.Rate < 2000){
+    //             return ele;
+    //         }
+           
+    //     })
+    //     display(productArr);
+    // }
+    // if(filter2==false && filter3==false){
+    //     display(arr)
+    // }
+
+    // if(filter3==true && filter4==true){
+    //     let productArr=arr.filter((ele)=>{
+    //         if(ele.Rate > 1000 && ele.Rate < 4000){
+    //             return ele;
+    //         }
+           
+    //     })
+    //     display(productArr);
+    // }
+    // if(filter3==false && filter4==false){
+    //     display(arr)
+    // }
+    // if(filter4==true && filter5==true){
+    //     let productArr=arr.filter((ele)=>{
+    //         if(ele.Rate > 2000 && ele.Rate < 6000){
+    //             return ele;
+    //         }
+           
+    //     })
+    //     display(productArr);
+    // }
+    // if(filter4==false && filter5==false){
+    //     display(arr)
+    // }
+
+
+
+}))
 
 
 
 
 
-    document.getElementById("age").addEventListener("click", (e) => {
-        let filter1 = document.getElementById("checkbox2").checked;
-        let filter2 = document.getElementById("checkbox3").checked;
-        console.log(filter1)
-        if (filter1 == true && filter2 == true) {
-            let productArr = arr.filter((el) => {
-                if (el.month == "0-3 Month" || el.month == "3-6 Month") {
-                    // console.log(el)
-                    return el;
-                   
-                }
-            })
-            display(productArr);
-        } else if (filter1) {
-            let productArr = arr.filter((el) => {
-                if (el.month == "0-3 Month") {
-                    return el;
-                }
-            })
-            display(productArr);
-        } else if (filter2) {
-            let productArr = arr.filter((el) => {
-                if (el.month == "3-6 Month") {
-                    return el;
-                }
-            })
-            display(productArr);
-        }
 
-        else {
-            document.getElementById("productbox").innerHTML = "";
-            display(arr)
-        }
-    })
+   
       
     // Price low to high and high to low sort
 
@@ -490,16 +742,21 @@ display(arr);
    let select = ele.target.value;
    console.log(ele);
    if(select=="asc"){
-    let productarr = arr.sort(function(a,b){
-        return a.Rate - b.Rate;
-    })
-     display(productarr)
-   }
+   let productArr=arr.sort(function(a,b){
+    return a.Rate-b.Rate;
+   })
+   display(productArr);
+}
+
    if(select=="dsc"){
-    console.log("hii");
+   let productArr=arr.sort(function(a,b){
+    return b.Rate-a.Rate;
+   })
+display(productArr);
 
    }
   
+   
 
   }))
 
@@ -523,6 +780,7 @@ function display(temp){
         Rate.innerText=ele.Rate;
         var del=document.createElement("p");
         del.innerText=ele.delete;
+        del.style.textDecoration="line-through"
         var discount=document.createElement("p");
         discount.innerText=ele.discount;
         discount.style.color="red";
@@ -532,6 +790,7 @@ function display(temp){
         gender.innerText=ele.gender; 
         div1.append(Rate,del,discount);
         maindiv.append(image,div1,month,gender);
+        maindiv.setAttribute("id", "mainproduct");
         document.getElementById("productbox").append(maindiv);
     });
 
