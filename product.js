@@ -3,18 +3,20 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 659,
     delete:999,
-    discount:"30%",
+    discount:"(30% off)",
     month:"3-6 Month" ,
     gender:"Girl", 
+    type:"ethic",
 },
 {
     image:"https://i.ibb.co/f8xjqVT/swe4.webp",
     des:"Pin kind full Sleeve cab",
     Rate: 965,
     delete:1399,
-    discount:"40%",
+    discount:"(40% off)",
     month:"more then 1 year" ,
-    gender:"Boy", 
+    gender:"Boy",
+    type:"winter", 
 
 },
 {
@@ -22,9 +24,10 @@ let arr=[{
     des:"Sweater with  acyrlic full Sleeve",
     Rate: 1074,
     delete:3000,
-    discount:"40%",
+    discount:"(40% off)",
     month: "9-12 Month",
     gender:"Girl", 
+    type:"winter",
 
 },
 {
@@ -32,9 +35,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 2000,
     delete:2500,
-    discount:"30%",
+    discount:"(30% off)",
     month: "0-3 Month",
     gender:"Boy", 
+    type:"night",
 
 },
 {
@@ -42,9 +46,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1059,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "9-12 Month",
     gender:"Boy", 
+    type:"winter",
 
 },
 {
@@ -52,9 +57,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1756,
     delete:2050,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
-    gender:"Boy", 
+    gender:"Boy",
+    type:"foot", 
 
 
 },
@@ -63,9 +69,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 359,
     delete:699,
-    discount:"40%",
+    discount:"(40% off)",
     month: "more then 1 year",
-    gender:"Boy", 
+    gender:"Boy",
+    type:"foot", 
 
 
 },
@@ -74,9 +81,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 589,
     delete:999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year ",
-    gender:"Girl", 
+    gender:"Girl",
+    type:"foot", 
 
 
 },
@@ -85,10 +93,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 459,
     delete:1299,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Boy", 
-
+    type:"foot", 
 
 },
 {
@@ -96,10 +104,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1259,
     delete:1699,
-    discount:"30%",
+    discount:"(30% off)",
     month: "6-9 Month",
     gender:"Boy", 
-
+    type:"foot", 
 
 },
 {
@@ -107,10 +115,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 959,
     delete:399,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Boy", 
-
+    type:"foot", 
 
 },
 {
@@ -118,10 +126,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1259,
     delete:3199,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
     gender:"Boy", 
-
+    type:"foot", 
 
 },
 {
@@ -129,10 +137,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 859,
     delete:1299,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Boy", 
-
+    type:"foot", 
 
 },
 {
@@ -140,10 +148,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1059,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
     gender:"Boy", 
-
+    type:"foot", 
 
 },
 {
@@ -151,9 +159,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1259,
     delete:1399,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
-    gender:"Boy", 
+    gender:"Boy",
+    type:"festival", 
 
 
 },{
@@ -161,80 +170,80 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1159,
     delete:1299,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Boy", 
-
+    type:"festival",
 
 },{
     image:"https://i.postimg.cc/8c5Q7BPM/ethic7.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1699,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Boy", 
-
+    type:"festival",
 
 },{
     image:"https://i.postimg.cc/Z56gKDFX/ethic6.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1359,
     delete:2199,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
     gender:"Boy", 
-
+    type:"festival",
 
 },{
     image:"https://i.postimg.cc/13Kkrjnw/ethic5.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1859,
     delete:2299,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/P5dcJQ3x/ethic4.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1659,
     delete:1899,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/RFtGXWsy/ethic3.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1659,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"night",
 
 },{
     image:"https://i.postimg.cc/2SPZT2sj/ethic2.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/65P25M5V/ethic1.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1359,
     delete:1999,
-    discount:"30%",
+    discount:"(30% off)",
     month: "9-12 Month",
     gender:"Girl", 
-
+    type:"frock",
 
 },
 {
@@ -242,79 +251,80 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1859,
     delete:2099,
-    discount:"20%",
+    discount:"(20% off)",
     month: "9-12 Month",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/1tpw823V/frock11.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1659,
     delete:1959,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/g2Cx3s5V/frock10.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 959,
     delete:1299,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/Tw7GJYwz/frock9.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 999,
     delete:1699,
-    discount:"20%",
+    discount:"(20% off)",
     month: "9-12 Month",
     gender:"Girl", 
-
+    type:"night",
 
 },{
     image:"https://i.postimg.cc/xjB8wtfW/frock8.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1209,
     delete:1999,
-    discount:"30%",
+    discount:"(30% off)",
     month: "9-12 Month",
     gender:"Girl", 
-
+    type:"night",
 
 },{
     image:"https://i.postimg.cc/c4QxVW5n/frock7.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1659,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Girl", 
-
+    type:"night",
 
 },{
     image:"https://i.postimg.cc/RhLYLgXN/frock5.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1359,
     delete:1999,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"night",
 
 },{
     image:"https://i.postimg.cc/RhLYLgXN/frock5.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1699,
-    discount:"40%",
+    discount:"(40% off)",
     month: "3-6 Month",
     gender:"Girl", 
+    type:"night",
 
 
 },{
@@ -322,20 +332,20 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "9-12 Month",
     gender:"Girl", 
-
+    type:"frock",
 
 },{
     image:"https://i.postimg.cc/RFtGXWsy/ethic3.webp",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1459,
     delete:1999,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"frock",
 
 },
 {
@@ -343,10 +353,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1159,
     delete:1999,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"night",
 
 },
 {
@@ -354,10 +364,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 859,
     delete:1299,
-    discount:"10%",
+    discount:"(10% off)",
     month: "0-3 Month",
     gender:"Girl", 
-
+    type:"night",
 
 },
 {
@@ -365,10 +375,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1659,
     delete:1999,
-    discount:"20%",
+    discount:"(20% off)",
     month: "6-9 Month",
     gender:"Girl", 
-
+    type:"pajamas",
 
 },
 {
@@ -376,10 +386,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1059,
     delete:1999,
-    discount:"40%",
+    discount:"(40% off)",
     month: "0-3 Month",
     gender:"Girl", 
-
+    type:"ethic",
 
 },
 {
@@ -387,10 +397,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1159,
     delete:1879,
-    discount:"30%",
+    discount:"(30% off)",
     month: "more then 1 year",
     gender:"Girl", 
-
+    type:"ethic",
 
 },
 {
@@ -398,10 +408,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1359,
     delete:1999,
-    discount:"30%",
+    discount:"(30% off)",
     month: "6-9 Month",
     gender:"Girl", 
-
+    type:"pajamas",
 
 },
 {
@@ -409,10 +419,10 @@ let arr=[{
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 1245,
     delete:1345,
-    discount:"10%",
+    discount:"(10% off)",
     month: "6-9 Month",
     gender:"Girl", 
-
+    type:"pajamas",
 
 },
 {
@@ -421,10 +431,10 @@ image:"https://i.postimg.cc/fb6ytSDg/top2.webp",
 des:"babyhug Full Sleeve acyrlic full Sleeve",
 Rate: 1359,
 delete:1999,
-discount:"30%",
+discount:"(30% off)",
 month: "6-9 Month",
 gender:"Girl", 
-
+type:"frock",
 
 },
 {
@@ -433,10 +443,10 @@ image:"https://i.postimg.cc/3JKRvTQ7/top1.webp",
 des:"babyhug Full Sleeve acyrlic full Sleeve",
 Rate: 1259,
 delete:1999,
-discount:"40%",
+discount:"(40% off)",
 month: "0-3 Month",
 gender:"Girl", 
-
+type:"frock",
 
 },
 {
@@ -445,10 +455,10 @@ gender:"Girl",
     des:"babyhug Full Sleeve acyrlic full Sleeve",
     Rate: 350,
     delete:1999,
-    discount:"40%",
+    discount:"(40% off)",
     month: "0-3 Month",
     gender:"Girl", 
-    
+    type:"frock",
     
     },
     {
@@ -456,10 +466,10 @@ gender:"Girl",
         des:"babyhug Full Sleeve acyrlic full Sleeve",
         Rate: 4059,
         delete:5999,
-        discount:"40%",
+        discount:"(40% off)",
         month: "0-3 Month",
         gender:"Girl", 
-    
+        type:"top",
     
     },
         
@@ -467,6 +477,8 @@ gender:"Girl",
 
 
 display(arr);
+// that's for clothes and shoes
+
 
 // that's for filtering sort by array
 document.getElementById("age").addEventListener("click",(ele=>{
@@ -783,19 +795,22 @@ function display(temp){
         maindiv.setAttribute("id","maindivcss");
         var image=document.createElement("img");
         image.src=ele.image;
+        image.setAttribute("id","image2");
         var dec=document.createElement("h4");
         dec.innerText=ele.des;
         var div1= document.createElement("div");
         div1.style.display="flex";
         div1.style.gap="20px";
        var Rate=document.createElement("p")
-        Rate.innerText=ele.Rate;
+        Rate.innerText="₹ " + ele.Rate;
         var del=document.createElement("p");
-        del.innerText=ele.delete;
+        del.innerText= "₹ " + ele.delete;
         del.style.textDecoration="line-through"
         var discount=document.createElement("p");
         discount.innerText=ele.discount;
         discount.style.color="red";
+        discount.style.fontSize = "13px"
+        discount.style.marginTop = "10px"
         var month=document.createElement("p");
         month.innerText=ele.month;
         var gender=document.createElement("p");
@@ -805,11 +820,11 @@ function display(temp){
         div1.style.top="-20px";
         var div2=document.createElement("div");
         button.setAttribute("id","button1");
-        button.addEventListener("click",(()=>{
-          cartArr.push(ele);
-          alert("Product added")
-          localStorage.setItem("cartData",JSON.stringify(cartArr))
-        }))
+       button.addEventListener("click",(()=>{
+        cartArr.push(ele);
+        localStorage.setItem("cart",JSON.stringify(cartArr));
+        console.log(cartArr);
+       }))
         div2.style.position="relative";
         div2.style.top="-40px";
         button.innerText="Add to Cart";
