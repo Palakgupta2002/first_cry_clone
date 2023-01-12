@@ -478,6 +478,150 @@ type:"frock",
 
 display(arr);
 // that's for clothes and shoes
+document.getElementById("checkbox30").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox30").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="ethic"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox31").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox31").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="foot"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox32").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox32").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="frock"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox33").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox33").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="pajamas"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox34").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox34").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="night"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox35").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox35").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="festival"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox36").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox36").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="winter"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
+document.getElementById("checkbox37").addEventListener("click",()=>{
+    let filter1=document.getElementById("checkbox37").checked;
+    if(filter1){
+       let productArr1=arr.filter((ele)=>{
+           if(ele.type=="top"){
+               return ele;
+           }
+
+       })
+
+       display(productArr1);
+
+   }
+   if(!filter1){
+       display(arr)
+   }
+
+})
 
 
 // that's for filtering sort by array
@@ -822,6 +966,7 @@ function display(temp){
         button.setAttribute("id","button1");
        button.addEventListener("click",(()=>{
         cartArr.push(ele);
+        alert("Product added succesfully")
         localStorage.setItem("cart",JSON.stringify(cartArr));
         console.log(cartArr);
        }))

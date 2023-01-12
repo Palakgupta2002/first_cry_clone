@@ -1,0 +1,65 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#navsign{
+    position: relative;
+    margin-right: 70px;
+}
+#nav{
+    margin-left: 60px;
+}
+#navsign>a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(126, 123, 123);
+    font-family: Roboto-Regular;
+
+}
+#shoppingcart1{
+    color:#FF7043;
+    font-size : 20px;
+   font-family: Roboto-Medium;
+}
+#shoppingcartdiv2{
+    display: flex;
+    column-gap: 6px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width:170px;
+    padding-left: 30px;
+    position: relative;
+    
+
+}
+#mainshoppingcartnav{
+    display: flex;
+    column-gap: 22px;
+    position: relative;
+   padding-left: 120px;
+   padding-top: 20px;
+}
+#availableimage{
+    height:14px;
+    padding-left: 40px;
+    padding-top: 17px;
+}
+#avaliableoffer{
+    display:flex;
+    column-gap: 5px;
+    position: relative;
+    left: -20px;
+}
+#ul{
+    position: relative;
+    top: -25px;
+    font-size: 15px;
+    color: rgb(129, 123, 123);
+   
+   
+}
+#ul>li{
+    padding-top: 10px;
+}
+ 
