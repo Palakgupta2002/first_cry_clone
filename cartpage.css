@@ -21,6 +21,8 @@
     color:#FF7043;
     font-size : 20px;
    font-family: Roboto-Medium;
+   
+   
 }
 #shoppingcartdiv2{
     display: flex;
@@ -28,9 +30,9 @@
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     width:170px;
-    padding-left: 30px;
     position: relative;
-    
+    border-top: 4px solid #FF7043;
+   padding-left: 12px;
 
 }
 #mainshoppingcartnav{
@@ -62,4 +64,26 @@
 #ul>li{
     padding-top: 10px;
 }
+#mainavailable{
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+    top:-20px;
+    margin-left: 120px;
+    width: fit-content;
+}
+#avlbutton{
+    border:none;
+    color:#FF7043;
+    font-size: 12px;
+
+}
+#avlbtnp{
+    height: 8px;
+    padding-top: 5px;
+    cursor: pointer;
+   }
+   #avlbtndiv{
+    padding-top: 5px;
+   }
  
