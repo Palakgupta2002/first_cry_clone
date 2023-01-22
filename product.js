@@ -929,7 +929,7 @@ display(productArr);
 
 
     
-  let cartArr = []
+  let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
 
 function display(temp){
     document.getElementById("productbox").innerHTML = "";
@@ -978,8 +978,10 @@ function display(temp){
         maindiv.setAttribute("id", "mainproduct");
         document.getElementById("productbox").append(maindiv);
     });
-
-
 }
+var p=JSON.parse(localStorage.getItem("cart"));
+var cart=document.getElementById("cartcount");
+cart.innerText = p.length;
+
 
 

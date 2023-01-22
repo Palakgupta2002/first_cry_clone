@@ -1,6 +1,5 @@
-
+let arr = JSON.parse(localStorage.getItem("cart"));
 function display1(){
-    let arr= JSON.parse(localStorage.getItem("cart")) || [];
     var div1=document.createElement("div");
     var div2=document.createElement("div");
     var div3=document.createElement("div");
@@ -12,7 +11,7 @@ function display1(){
     myshorlist.innerText="My Shortlist";
     myshorlist.style.color="grey";
     div3.append(myshorlist);
-    arrlength.innerText= "("+arr.length+")";
+    arrlength.innerText= "("+ arr.length+ ")";
     shopping.innerText= "Shopping Cart " ;
     shopping.style.fontWeight="550";
     div2.append(shopping,arrlength);
@@ -31,15 +30,19 @@ function display1(){
         availabletext.style.color="black";
         availabletext.style.fontSize="15px";
         var ul=document.createElement("ul");
-        // var avlbtndiv=document.createElement("div");
-        // avlbtndiv.style.display="flex";
-        // var avlbtnp=document.createElement("img");
-        //  avlbtnp.src="file:///C:/Users/User/Downloads/arrow1.webp";
-        // avlbtnp.setAttribute("id","avlbtnp");
-        // var avlbutton= document.createElement("button");
-        // avlbutton.setAttribute("id","avlbutton");
-        // avlbutton.innerText="View More";
-        // avlbtndiv.append( avlbutton,avlbtnp);
+        var avlbtndiv=document.createElement("div");
+        avlbtndiv.style.display="flex";
+        var avlbtnp=document.createElement("img");
+         avlbtnp.src="file:///C:/Users/User/Downloads/arrow1.webp";
+        avlbtnp.setAttribute("id","avlbtnp");
+        var avlbutton= document.createElement("button");
+        avlbutton.innerText="view less"
+        let select = true;
+        console.log(select)
+      
+        console.log(select)
+        avlbutton.setAttribute("id","avlbutton");
+        avlbtndiv.append( avlbutton,avlbtnp);
         ul.setAttribute("id","ul");
         var li1=document.createElement("li");
         li1.innerText="Get 5% Instant Discount Upto Rs. 500 on SBI Credit Cards (Minimum Order Value: Rs. 2000) T&C" ;
@@ -50,7 +53,7 @@ function display1(){
         var li4=document.createElement("li");
         li4.innerText="Get 2X cashback upto Rs. 500 on CRED Pay UPI(Minimum Order Value: Rs.1000) T&C";
 
-        ul.append(li1,li2,li3,li4);
+        ul.append(li1,li2,li3,li4, avlbtndiv);
         avaliableoffer.append(availableimage,availabletext);
         var main2avilable= document.createElement("div");
         mainavailable.append(avaliableoffer,ul);
@@ -58,7 +61,8 @@ function display1(){
         document.getElementById("shoppingcart1").append(div1,main2avilable);
         mainavailable.setAttribute("id","mainavailable");
         main2avilable.setAttribute("id","main2avilable");
-        arr.map((ele)=>{
+
+        arr&&arr.map((ele)=>{
         var maindivmap=document.createElement("div");
         var image=document.createElement("img");
         var Rate=document.createElement("p");
@@ -86,8 +90,23 @@ function display1(){
         remove.innerText="REMOVE";
         remove.fontWeight="600";
         document.getElementById("shoppingcart2").append(maindivmap);
-        console.log(maindivmap);
-       
+        console.log(maindivmap);  
+        var Rate1=document.createElement("p");
+        Rate1.innerText="₹ " + ele.Rate;
+        var delete1=document.createElement("p");
+        delete1.innerText="MRP   " +"₹ " + ele.Rate;
+        delete1.style.textDecorationLine="linethrough";
+        delete1.style.color="lightblack";
+        var image1=document.createElement("img");
+        image1.src="file:///C:/Users/User/Downloads/clublogo.webp";
+        var image1p=document.createElement("p");
+        image1p.innerText="Club Price";
+        var tax=document.createElement("p");
+        tax.innerText="MRP Includes all taxes";
+        tax.style.color="#757575";
+        var quantity=document.createElement("p");
+        quantity.innerText="Qty:";
+        
  })
     
     
