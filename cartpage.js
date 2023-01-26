@@ -63,7 +63,9 @@ function display1(){
         main2avilable.setAttribute("id","main2avilable");
 
         arr&&arr.map((ele)=>{
+        var maincartdiv=document.createElement("div");
         var maindivmap=document.createElement("div");
+        var maindivmap1=document.createElement("div");
         var image=document.createElement("img");
         var Rate=document.createElement("p");
         var gate=document.createElement("p");
@@ -89,24 +91,75 @@ function display1(){
         var mainremove=document.createElement("div");
         remove.innerText="REMOVE";
         remove.fontWeight="600";
-        document.getElementById("shoppingcart2").append(maindivmap);
+        document.getElementById("shoppingcart2").append( maincartdiv);
         console.log(maindivmap);  
         var Rate1=document.createElement("p");
         Rate1.innerText="₹ " + ele.Rate;
         var delete1=document.createElement("p");
-        delete1.innerText="MRP   " +"₹ " + ele.Rate;
-        delete1.style.textDecorationLine="linethrough";
+        var deletep=document.createElement("p");
+        deletep.innerText="MRP   " +"₹ " ;
+        delete1.innerText= ele.delete;
+        var Discount1=document.createElement("p");
+        Discount1.innerText=ele.discount;
+        Discount1.style.color="red";
+        delete1.style.textDecorationLine="line-through";
         delete1.style.color="lightblack";
         var image1=document.createElement("img");
         image1.src="file:///C:/Users/User/Downloads/clublogo.webp";
+        image1.style.height="20px";
+        image1.style.position="relative";
+        image1.style.paddingTop="15px";
         var image1p=document.createElement("p");
         image1p.innerText="Club Price";
         var tax=document.createElement("p");
+        var discountprice=document.createElement("p");
+        discountprice.innerText=ele.Rate+ Math.floor((Math.random() * 10) + 1);
         tax.innerText="MRP Includes all taxes";
         tax.style.color="#757575";
         var quantity=document.createElement("p");
         quantity.innerText="Qty:";
-        
+        var button1=document.createElement("button")
+        button1.innerText = "+"
+        let count = 1;
+        let p = document.createElement("p");
+        p.innerText = 1;
+        button1.addEventListener("click",(()=>{
+               count++;
+               p.innerText = count;
+        }))
+        var button2=document.createElement("button");
+        button2.innerText = "-";
+        button2.addEventListener("click",(()=>{
+              if(count>1){
+                     count--;
+              }
+               
+                p.innerText = count;
+        }))
+        button1.style.height="20px";
+        button1.style.position="relative";
+        button1.style.top="14.5px";
+        button2.style.height="20px";
+        button2.style.position="relative";
+        button2.style.top="14.5px";
+        var deletediv=document.createElement("div");
+        deletediv.append(deletep,delete1,Discount1);
+        deletediv.style.display="flex";
+        deletediv.style.columnGap="10px";
+        var clubimage=document.createElement("div");
+        clubimage.append(image1, image1p)
+        clubimage.style.display="flex";
+        clubimage.style.columnGap="10px";
+        var qty1=document.createElement("div");
+        qty1.append(quantity,button1,p,button2);
+        qty1.style.display="flex";
+        qty1.style.columnGap="10px";
+        maindivmap1.append(Rate1, deletediv,clubimage,discountprice,tax, qty1);
+        maincartdiv.append(maindivmap, maindivmap1);
+        maindivmap1.setAttribute("id","maindivmap1");
+        maincartdiv.style.display="flex";
+
+
  })
     
     
