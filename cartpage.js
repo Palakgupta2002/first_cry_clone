@@ -224,29 +224,28 @@ function display1(){
  
     }
 display1()
-var logintotal1=document.createElement("button");
-logintotal1.innerText="login to place order";
-logintotal1.addEventListener("click",(()=>{
-     location.href="login.html";
-   
+let login=document.createElement("button");
 
-}));
-let amout=0;
-var total=arr.filter((ele)=>{
- amout=ele.Rate+amout;
-      }
-)
-var logintotaldiv=document.createElement("div");
-var totalamoutdiv=document.createElement("div");
-var totalamount=document.createElement("p");
-totalamount.innerText=amout;
-var logindiv=document.createElement("div");
-logintotal1.style.width="400px";
-logintotal1.style.marginTop="20px";
-logintotal1.style.backgroundColor="#FF7043";
-logindiv.append(logintotal1);
-logindiv.style.backgroundColor="red";
-totalamoutdiv.append(totalamount);
-logindiv.append(totalamoutdiv);
-logintotaldiv.append(logindiv,totalamoutdiv);
-document.getElementById("total").append(logindiv);
+login.innerText="Login To Place Order";
+login.addEventListener("click",(()=>{
+      location.href="login.html";
+     }))
+     login.setAttribute("id","login");
+     let total=document.createElement("p");
+     total.innerText="Total";
+     total.style.marginTop="-2px";
+     let totalamount=0;
+     arr.filter((ele)=>{
+      totalamount=ele.Rate+totalamount;
+  })
+  let placeorder=document.createElement("p");
+  placeorder.innerText="Place Order";
+  placeorder.style.paddingLeft="150px";
+  let totalamountdiv=document.createElement("div");
+  totalamountdiv.append(total,totalamount);
+  let placetotal=document.createElement("div");
+  placetotal.append(totalamountdiv,placeorder);
+  placetotal.setAttribute("id","placetotal");
+  document.getElementById("total").append(login, placetotal);
+
+

@@ -136,5 +136,36 @@ margin-right: 10px;
     border:"2px solid red";
 
   }
-  
+  #total{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;;
+    background-color: white;
+    margin-top: 20px;
+    height: 80px;
+    width: 700px;
+    margin-left: 120px;
+    display: flex;
+    column-gap: 20px;
+  }
+  #login{
+    background-Color:#FF7043;
+    border:none;
+    color: white;
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 20px;
+    width: 420px;
+    font-size: 20px;
+  }
+  #placetotal{
+ display:flex;
+ background-Color:rgb(158,158,158);
+ margin-top: 20px;
+    height: 40px;
+    margin-right: 20px;
+    width: 300px;
+    font-size:14px;
+    padding-top: -20px;
+    
+
+  }
  
