@@ -26,9 +26,7 @@ font-family:Arial, Helvetica, sans-serif;
     color:#FF7043;
     font-size : 20px;
    font-family: Roboto-Medium;
-   
-   
-}
+   }
 #shoppingcartdiv2{
     display: flex;
     column-gap: 6px;
@@ -38,8 +36,7 @@ font-family:Arial, Helvetica, sans-serif;
     position: relative;
     border-top: 4px solid #FF7043;
    padding-left: 12px;
-
-}
+  }
 #mainshoppingcartnav{
     display: flex;
     column-gap: 22px;
@@ -75,7 +72,7 @@ font-family:Arial, Helvetica, sans-serif;
    
     position: relative;
     padding-right: 50px;
-    top: 30px;
+    top: 20px;
     margin-left: 50px;
     width: fit-content;
     border: 1px solid rgb(196, 186, 186);
@@ -100,14 +97,14 @@ font-family:Arial, Helvetica, sans-serif;
    height: 200px;
    margin-left: 120px;
    box-shadow: rgba(0, 0, 0, 0.16) 0px -6px 4px;
-   width: 750px;
-  
+   width: 700px;
+
    
    }
   #shoppingcart2{
-  
+ 
     margin-left: 120px;
-    width: 750px;
+    width: 700px;
     box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 0px 0px;
   }
   #maindivmap{
@@ -116,12 +113,28 @@ font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
     padding-left: 50px;
     color:#353030;
- 
     width: 400px;
-  
+    margin-top: 20px;
+  height:160px;
+margin-right: 10px;
+
+
   }
   #maindivmap1{
-   padding-left: 80px;
-   border-left:0.5px solid rgb(37, 35, 35);
+   padding-left: 30px;
+   border-left:0.5px solid rgb(218, 208, 208);
+   font-size: 15px;
+   line-height: 7px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   
+
   }
+  #logintotal{
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px -6px 4px;
+    border:"2px solid red";
+
+  }
+  
  
