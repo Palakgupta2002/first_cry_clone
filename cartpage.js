@@ -124,21 +124,29 @@ function display1(){
         var button1=document.createElement("button")
         button1.innerText = "+";
         let count = 1;
+        let sum = ele.Rate;
+
         let p = document.createElement("p");
         p.innerText = 1;
         p.style.position="relative";
         p.style.top="5px";
+
         button1.addEventListener("click",(()=>{
                count++;
-               p.innerText = count;
+               console.log(ele,"map")
+               sum += ele.Rate
+               Rate1.innerText = sum;
+               p.innerText = count
         }))
+        
         var button2=document.createElement("button");
         button2.innerText = "-";
-        button2.addEventListener("click",((ele)=>{
+        button2.addEventListener("click",(()=>{
               if(count>1){
+                  sum -= ele.Rate;
+                     Rate1.innerText = sum1;
                      count--;
               }
-               
                 p.innerText = count;
         }))
         button1.style.height="20px";
@@ -229,20 +237,24 @@ let login=document.createElement("button");
 login.innerText="Login To Place Order";
 login.addEventListener("click",(()=>{
       location.href="login.html";
-     }))
+}))
      login.setAttribute("id","login");
      let total=document.createElement("p");
+     let price1 = localStorage.getItem("total");
      total.innerText="Total";
      total.style.marginTop="-2px";
      let totalamount=0;
      arr.filter((ele)=>{
-      totalamount=ele.Rate+totalamount;
-  })
+     totalamount= ele.Rate+totalamount;
+})
+
   let placeorder=document.createElement("p");
   placeorder.innerText="Place Order";
   placeorder.style.paddingLeft="150px";
   let totalamountdiv=document.createElement("div");
   totalamountdiv.append(total,totalamount);
+  totalamountdiv.style.marginTop="1px";
+  totalamountdiv.style.marginLeft="7px";
   let placetotal=document.createElement("div");
   placetotal.append(totalamountdiv,placeorder);
   placetotal.setAttribute("id","placetotal");

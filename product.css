@@ -85,7 +85,7 @@ nav{
     font-size: 12px;
     font-weight: 600;
     position: relative;
-   
+   height: 20px;
    
 }
 .afternav :hover{
@@ -185,10 +185,12 @@ form{
     margin-top: -20px;
     font-family: cursive;
    
+   
 }
 #pincodebox{
     display:flex; 
     font-size: 13.5px;
+  
 }
 #pincode{
     color:blue; 
@@ -715,6 +717,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     margin-left: 13px;
     border-top:0.2px solid rgb(156, 154, 154) ;
     padding-top: 7px;
+}
+#filterboxx{
+    overflow-y: scroll;
+    height: 150px;
 }
 
 
